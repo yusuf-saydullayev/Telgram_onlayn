@@ -5,15 +5,19 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
+    "test": "mocha --exit --recursive",
     "postinstall": "./node_modules/bower/bin/bower install"
   },
   "dependencies": {
     "bower": "^1.8.8",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "hbs": "^4.1.1",
     "http-errors": "~1.6.3",
+    "mocha": "^8.1.3",
     "moment": "^2.27.0",
     "morgan": "~1.9.1",
     "socket.io": "^2.3.0"
